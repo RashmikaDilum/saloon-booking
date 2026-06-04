@@ -21,3 +21,8 @@ return Application::configure(basePath: dirname(__DIR__))
             fn (Request $request) => $request->is('api/*'),
         );
     })->create();
+
+// Allow Vercel to override the storage path to /tmp
+$app->useStoragePath(env('APP_STORAGE', base_path('storage')));
+
+return $app;

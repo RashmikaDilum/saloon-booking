@@ -32,7 +32,5 @@
         "QUEUE_CONNECTION": "sync",
         "LOG_CHANNEL": "stderr",
         "APP_STORAGE": "/tmp"
-    },
-    "outputDirectory": "public",
-    "framework": null
+    }
 }
